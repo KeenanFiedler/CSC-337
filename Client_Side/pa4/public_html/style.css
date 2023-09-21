@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    font-family: Courier New;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+#menu {
+    background-color: darkblue;
+    text-align: center;
+    width: 20%;
+    float: left;
+    top: 0px;
+    position: fixed;
+    bottom: 0px;
+    color: white;
+}
+h1 {
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+}
+
+
+table, tr, td {
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    font-size: 40px;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+}
+td {
+    width: 50px;
+    color: white;
+}
+
+
+#input{
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    font-size: 25px;
+}
+#slider{
+    margin: auto;
+    margin-top: 20px;
+    display: inline-block;
+}
+#changeCypher {
+    padding: 3px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+}
+
+
+
+#text {
+    height: 100%;
+    font-size: 70px;
+}
+#caesar {
+    float: right;
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    display: block;
+    background-color: purple;
+}
+#square {
+    float: right;
+    text-align: center;
+    width: 80%;
+    height: 50%;
+    background-color: pink;
+}

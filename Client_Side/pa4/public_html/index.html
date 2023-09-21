@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the Jumble</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="style.css">
+        <script src="functions.js"></script>
+    </head>
+    <body>
+        <div id="menu">
+            <h1>Welcome to the Jumble!</h1>
+            <input type="text" id="input" oninput="inputTyped()">
+            <input type="range" min="0" max="26" value="26" oninput="this.nextElementSibling.value = this.value;changeCaesar()"  id="slider">
+            <output>26</output>
+            <button id="changeCypher" onclick="changeSquare()">Change Square Cypher</button>
+            <table>
+                <tr>
+                    <td id="S1">A</td><td id="S2">B</td><td id="S3">C</td><td id="S4">D</td><td id="S5">E</td>
+                </tr>
+                <tr>
+                    <td id="S6">F</td><td id="S7">G</td><td id="S8">H</td><td id="S9">I</td><td id="S10">J</td>
+                </tr>
+                <tr>
+                    <td id="S11">K</td><td id="S12">L</td><td id="S13">M</td><td id="S14">N</td><td id="S15">O</td>
+                </tr>
+                <tr>
+                    <td id="S16">P</td><td id="S17">Q</td><td id="S18">R</td><td id="S19">S</td><td id="S20">T</td>
+                </tr>
+                <tr>
+                    <td id="S21">U</td><td id="S22">V</td><td id="S23">W</td><td id="S24">X</td><td id="S25">Y</td>
+                </tr>
+            </table>
+        </div>  
+        <div id = "text">
+            <div class = "cypherText" id = "caesar"></div>
+            <div class = "cypherText" id = "square"></div>
+        </div>
+    </body>
+</html>

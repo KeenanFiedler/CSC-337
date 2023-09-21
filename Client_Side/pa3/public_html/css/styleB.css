@@ -1,16 +1,24 @@
+/*
+    Keenan Fiedler
+    This is stylesheet B for PA3. It contains all the necessary font, color, and other changes. It also makes the header 
+    at the top-middle, navigation directly below it , and content/products in columns to either side. All elements scale 
+    with screen size and are properly aligned. The buttons are properly aligned.
+*/
+
 body {
     margin: 0px;
     display: flex;
     font-family: Verdana;
 }
+
 #header {
     box-sizing: border-box;
     color: yellow;
-    background-color: darkblue;
+    background-color: rgb(59, 59, 255);
     position: fixed;
     top: 0px;
     left: 33.33%;
-    width: 33.33%;
+    width: calc(100%/3);;
     height: 25%;
     font-size: 30px;
     padding: 10px;
@@ -23,10 +31,12 @@ body {
 h1 {
     font-size: 50px;
 }
+
+
 #navigation {
     box-sizing: border-box;
     background-color: rgb(136, 225, 255);
-    width: 33.33%;
+    width: calc(100%/3);
     position: fixed;
     top: 25%;
     left: 33.33%;
@@ -39,8 +49,10 @@ h1 {
 .navButton {
     display: block;
     padding: 25px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
+
+
 .productGroup {
     box-sizing: border-box;
     background-color: rgb(170, 234, 255);
@@ -48,7 +60,7 @@ h1 {
 }
 #productsColA {
     justify-content: right;
-    width: 33.33%;
+    width: calc(100%/3);
     height: 100%;
     position: fixed;
     left: 0px;
@@ -58,7 +70,7 @@ h1 {
 }
 #productsColB {
     justify-content: right;
-    width: 33.33%;
+    width: calc(100%/3);
     height: 100%;
     position: fixed;
     right: 0px;
@@ -71,6 +83,8 @@ h1 {
     padding-bottom: 10px;
     padding-top: 10px;
 }
+
+
 .styleButton {
     background-color: black;
     opacity: 0.5;

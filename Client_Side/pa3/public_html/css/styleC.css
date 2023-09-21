@@ -1,45 +1,70 @@
+/*
+    Keenan Fiedler
+    This is stylesheet C for PA3. It contains all the necessary font, color, and other changes. It also makes the header 
+    at the top-left using float with fixed width, navigation to the top-right using float with fixed width,
+    and content/products wrapping around the two elements nicely even with scaling of the screen. The buttons are properly aligned.
+*/
+
 body {
     margin: 0px;
+    display: inline-block;
+    font-family: Verdana;
 }
+
+
 #header {
     color: yellow;
-    background-color: darkblue;
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    background-color: rgb(59, 59, 255);
+    float: left;
     width: 500px;
     height: 500px;
     text-align: center;
     font-size: 25px;
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    z-index: 1;
 }
 #pricecoLogo {
     width: 30%
 }
+
+
 #navigation {
     background-color: rgb(136, 225, 255);
-    position: fixed;
-    top: 0px;
-    right: 0px;
+    float: right;
     width: 500px;
     height: 500px;
-    text-align: left;
     font-size: 25px;
-    display: block;
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    z-index: 1;
 }
 .navButton {
     display: block;
     padding: 25px;
-    margin-top: 10px;
-    text-align: left;
+    margin-top: 30px;
+    text-align: right;;
 }
+
+
 #content {
     background-color: rgb(170, 234, 255);
     font-size: 20px;
     text-align: center;
+    z-index: 0;
+    float: center;
 }
 .productDesc {
-    padding: 5px;
+    padding: 10px;
 }
+.productImg {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
 .styleButton {
     background-color: black;
     opacity: 0.5;
