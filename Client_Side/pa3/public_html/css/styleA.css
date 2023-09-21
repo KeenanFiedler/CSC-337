@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    display: flex;
+    font-family: Verdana;
+}
+#header {
+    color: yellow;
+    background-color: darkblue;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 20%;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+}
+#pricecoLogo {
+    display: inline-block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 20%;
+}
+h1 {
+    text-align: right;
+    justify-content: right;
+    display: inline-block;
+    font-size: 40px;
+    padding-right: 20px;
+}
+#navigation {
+    background-color: rgb(136, 225, 255);
+    justify-content: left;
+    font-size: 25px;
+    width: 20%;
+    height: 80%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: block;
+}
+.navButton {
+    display: block;
+    padding: 25px;
+    margin-top: 10px;
+    text-align: right;
+}
+#content {
+    background-color: rgb(170, 234, 255);
+    justify-content: right;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 20px;
+    text-align: center;
+}
+.productDesc {
+    padding: 5px;
+}
+.styleButton {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+#styleA {
+    left: 10px;
+    bottom: 10px;
+    width: 110px;
+}
+#styleB {
+    left: 170px;
+    bottom: 10px;
+    width: 110px;
+}
+#styleC {
+    left: 330px;
+    bottom: 10px;
+    width: 110px;
+}

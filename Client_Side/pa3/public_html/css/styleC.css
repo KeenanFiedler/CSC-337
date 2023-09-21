@@ -1,0 +1,68 @@
+body {
+    margin: 0px;
+}
+#header {
+    color: yellow;
+    background-color: darkblue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+#pricecoLogo {
+    width: 30%
+}
+#navigation {
+    background-color: rgb(136, 225, 255);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    font-size: 25px;
+    display: block;
+}
+.navButton {
+    display: block;
+    padding: 25px;
+    margin-top: 10px;
+    text-align: left;
+}
+#content {
+    background-color: rgb(170, 234, 255);
+    font-size: 20px;
+    text-align: center;
+}
+.productDesc {
+    padding: 5px;
+}
+.styleButton {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+#styleA {
+    left: 10px;
+    bottom: 10px;
+    width: 110px;
+}
+#styleB {
+    left: 170px;
+    bottom: 10px;
+    width: 110px;
+}
+#styleC {
+    left: 330px;
+    bottom: 10px;
+    width: 110px;
+}

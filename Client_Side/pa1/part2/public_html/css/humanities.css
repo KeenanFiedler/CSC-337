@@ -1,0 +1,92 @@
+/*
+Keenan Fiedler
+This style sheet is used for the humanities.html file. It sets the font-size
+font-family, and color of all text. It also formats the page to look nice and 
+centered. It also add rounded image borders, aligned tabel borders, and has 
+different border types and colors than style.css used for the index.html page.
+*/
+/*GENERAL*/
+body {
+    background-color: rgb(255, 220, 146);
+    min-width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    margin: auto;
+    display: block;
+    width: 50%;
+    border-style: double;
+    border-color: brown;
+    border-width: 10px;
+    border-radius: 10%;
+}
+
+/*TEXT*/
+h3 {
+    margin: 0px;
+}
+
+p {
+    color: rgb(161, 91, 0);
+    font-family: Tahoma;
+    font-size: 14pt;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.titles {
+    text-align: center;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50pt;
+    color: rgb(255, 226, 64);
+    background-color: rgb(82, 23, 21);
+}
+
+.links {
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fbff00;
+    padding: 5px;
+    font-family:'Trebuchet MS', sans-serif;
+    font-size: 30pt;
+    color: #fbff00;
+}
+
+#container {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(201, 97, 0);
+}
+
+/*TABLES*/
+tr,td,th {
+    border: tan 5px dotted;
+    padding: 20px
+}
+
+th {
+    background-color: rgb(82, 23, 21);
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    color:rgb(255, 196, 0);
+    background-color: rgb(126, 71, 71);
+}
+

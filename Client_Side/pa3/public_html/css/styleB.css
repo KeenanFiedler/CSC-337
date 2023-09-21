@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    display: flex;
+    font-family: Verdana;
+}
+#header {
+    box-sizing: border-box;
+    color: yellow;
+    background-color: darkblue;
+    position: fixed;
+    top: 0px;
+    left: 33.33%;
+    width: 33.33%;
+    height: 25%;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+#pricecoLogo {
+    width: 20%;
+    float: left;
+}
+h1 {
+    font-size: 50px;
+}
+#navigation {
+    box-sizing: border-box;
+    background-color: rgb(136, 225, 255);
+    width: 33.33%;
+    position: fixed;
+    top: 25%;
+    left: 33.33%;
+    height: 75%;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+
+}
+.navButton {
+    display: block;
+    padding: 25px;
+    margin-top: 20px;
+}
+.productGroup {
+    box-sizing: border-box;
+    background-color: rgb(170, 234, 255);
+    padding: 10px;
+}
+#productsColA {
+    justify-content: right;
+    width: 33.33%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    overflow-y: auto;
+    font-size: 20px;
+    text-align: center;
+}
+#productsColB {
+    justify-content: right;
+    width: 33.33%;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 20px;
+    text-align: center;
+}
+.productImg {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.styleButton {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+#styleA {
+    left: 10px;
+    bottom: 10px;
+    width: 110px;
+}
+#styleB {
+    left: 170px;
+    bottom: 10px;
+    width: 110px;
+}
+#styleC {
+    left: 330px;
+    bottom: 10px;
+    width: 110px;
+}

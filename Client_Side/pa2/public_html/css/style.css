@@ -1,0 +1,95 @@
+/*
+    Keenan Fiedler
+ This is the stylesheet for PA2. It contains all the necessary font, color, and other changes.
+ The images are aligned herer, and the font, color, and borders of the input boxes have
+ also been changed. 
+*/
+
+body {
+    background-color: tan;
+    margin: 0px;
+    font-family: Verdana;
+}
+h1 {
+    background-color: darkred;
+    color: orange;
+    font-size: 40px;
+    font-family: Verdana;
+    margin: 0px;
+    padding: 80px;
+    text-align: center;
+    display: inline;
+    width: 80%;
+}
+h3 {
+    background-color: darkred;
+    color: orange;
+    font-size: 40px;
+    font-family: Verdana;
+    margin: 0px;
+    text-align: center;
+    padding: 25px;
+}
+img {
+    width: 5%;
+}
+p {
+    background-color: darkred;
+    color: orange;
+    font-size: 20px;
+    font-family: Verdana;
+    padding: 20px;
+}
+label {
+    color: darkred;
+    font-size: 20px;
+    font-family: Verdana;
+    margin-right: 45%;
+}
+input {
+    text-align: right;
+    font-family: Georgia;
+    font-size: 20px;
+    color: purple;
+    background-color: tan;
+    border-color: rgb(150,75,0);
+    border-width: 5px;
+    border-style: solid;
+    margin-top: 10px;
+}
+textarea {
+    text-align: right;
+    font-family: Georgia;
+    font-size: 20px;
+    color: purple;
+    background-color: tan;
+    border-color: rgb(150,75,0);
+    border-width: 5px;
+    border-style: solid;
+    margin-top: 10px;
+}
+#formspace{
+    text-align: center;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col {
+    width: 400px;
+}
+#heading{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:S 40px;
+    background-color: darkred;
+}
+#img1{
+    float: left;
+}
+#img2{
+    float: right;
+}
