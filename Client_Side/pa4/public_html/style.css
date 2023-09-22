@@ -1,3 +1,9 @@
+/*
+    Keenan Fiedler
+    This is stylesheet for PA4. It contains all the necessary font, color, and other changes. It also puts the title, input box, slidr, and square on the right,
+    with the casesar cypher on the top left in large font, and the square cypher on the bottom left in large font. It formats the square cypher table to look good.
+*/
+
 body {
     margin: 0px;
     font-family: Courier New;
