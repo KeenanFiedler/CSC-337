@@ -1,6 +1,6 @@
 /*
     Keenan Fiedler
-    This is the main Javascript file for PA4. It allows teh input of the user to update the text on the right.
+    This is the main Javascript file for PA4. It allows the input of the user to update the text on the right.
     It also allows the user to click a button and randomize the values of the cells in the square cypher,
     and change a slider to change the shift of the caesar cypher. This all updates in real time.
 */

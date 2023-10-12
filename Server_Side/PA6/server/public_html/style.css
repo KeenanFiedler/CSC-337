@@ -1,0 +1,44 @@
+body{
+    font-family: Courier;
+    margin: 0px;
+    background-color: lightsalmon;
+}
+h1{
+    font-size: 100px;
+    background-color: lightcoral;
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+div {
+    display: inline-block;
+    width: 100%;
+}
+textarea {
+    font-size: 80px;
+    background-color: lightcoral;
+    width: 100%;
+    overflow-y: auto;
+}
+.row {
+    display: flex;
+    width: 100%;
+    margin-left: 0px;
+}
+.col {
+    width: 50%;
+    margin-left: 2%; 
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+}
+select {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+    background-color: rgb(252, 177, 177);
+    padding: 5px;
+}
+

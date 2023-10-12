@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Translator</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="style.css">
+        <script src="functions.js"></script>
+    </head>
+    <body>
+        <h1>Translator</h1>
+        <div>
+            <div class = "row">
+                <div class = "col">
+                    <select onchange="translate()" id="inlanguage">
+                        <option value="english">English</option>
+                        <option value="german">German</option>
+                        <option value="spanish">Spanish</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select  onchange="translate()" id="outlanguage">
+                        <option value="english">English</option>
+                        <option value="german">German</option>
+                        <option value="spanish">Spanish</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea rows = "5" cols = "20" id = "inText" oninput="translate()"></textarea>
+                </div>
+                <div class="col">
+                    <textarea rows = "5" cols = "20" id = "outText" oninput="translate()"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
