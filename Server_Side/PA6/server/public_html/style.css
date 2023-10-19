@@ -1,3 +1,9 @@
+/*
+    Keenan Fiedler
+    This is stylesheet for PA6. It contains all the necessary font, font-size, and color changes to make the page look good.
+    It also arranges the heading, two selection boxes, and two text boxes into a nice layout with two columns for the input and translated text.
+*/
+
 body{
     font-family: Courier;
     margin: 0px;

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html>
+<!--
+    Keenan Fiedler
+    This file is the main page for PA6. It has the title, javascript linked in, and css linked in. It also hs two selection boxes with the three language options,
+    and the two text boxes fro the user's input and the translation.
+-->
+<html lang ='en'>
     <head>
         <title>Translator</title>
         <link id="cssFile" rel="stylesheet" type="text/css" href="style.css">
@@ -10,14 +15,14 @@
         <div>
             <div class = "row">
                 <div class = "col">
-                    <select onchange="translate()" id="inlanguage">
+                    <select onchange="getTranslation()" id="inlanguage">
                         <option value="english">English</option>
                         <option value="german">German</option>
                         <option value="spanish">Spanish</option>
                     </select>
                 </div>
                 <div class="col">
-                    <select  onchange="translate()" id="outlanguage">
+                    <select  onchange="getTranslation()" id="outlanguage">
                         <option value="english">English</option>
                         <option value="german">German</option>
                         <option value="spanish">Spanish</option>
@@ -26,10 +31,10 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <textarea rows = "5" cols = "20" id = "inText" oninput="translate()"></textarea>
+                    <textarea rows = "5" cols = "20" id = "inText" oninput="getTranslation()"></textarea>
                 </div>
                 <div class="col">
-                    <textarea rows = "5" cols = "20" id = "outText" oninput="translate()"></textarea>
+                    <textarea rows = "5" cols = "20" id = "outText" oninput="getTranslation()"></textarea>
                 </div>
             </div>
         </div>

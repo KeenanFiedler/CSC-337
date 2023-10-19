@@ -1,10 +1,12 @@
 /*
     Keenan Fiedler
-    This is the Javascript file for PA5. It allows the input of the user in the URL to be parsed and 
-    trasnlated in six differnt ways between Germna, Spanish, and Enlglish. Each request to the server via
-    the URL updates the text in the webstire to display teh requested translation of a senctence.
+    This is the Javascript file for PA6. It allows the input of the user in the URL to be parsed and 
+    trasnlated in six different ways between German, Spanish, and English. Each request to the server via
+    the functions.js file updates the text in the website to display the requested translation of a sentence. 
+    It uses express instead of http, and sends every request a return value to the functions.js file in public_html.
 */
-//basic includsion of packages
+
+//basic inclusion of packages
 const express = require('express');
 const readline = require('readline');
 const fs = require("fs");
@@ -20,6 +22,7 @@ var file = readline.createInterface({input: fileStream, output: process.stdout, 
 file.on('line', (line) => {
     //splits each line by tab and then discards everything after special characters in the second half
     temp = line.split('\t');
+    temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]\ \(/)[0];
     temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]/)[0];
     e2s[temp[0]] = temp[1];
 });
@@ -32,6 +35,7 @@ var file2 = readline.createInterface({input: fileStream2, output: process.stdout
 file2.on('line', (line) => {
     //splits each line by tab and then discards everything after special characters in the second half
     temp = line.split('\t');
+    temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]\ \(/)[0];
     temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]/)[0];
     s2e[temp[1]] = temp[0];
 });
@@ -44,6 +48,7 @@ var file3 = readline.createInterface({input: fileStream3, output: process.stdout
 file3.on('line', (line) => {
     //splits each line by tab and then discards everything after special characters in the second half
     temp = line.split('\t');
+    temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]\ \(/)[0];
     temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]/)[0];
     e2g[temp[0]] = temp[1];
 });
@@ -56,6 +61,7 @@ var file4 = readline.createInterface({input: fileStream4, output: process.stdout
 file4.on('line', (line) => {
     //splits each line by tab and then discards everything after special characters in the second half
     temp = line.split('\t');
+    temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]\ \(/)[0];
     temp[1] = String(temp[1]).split(/[<>%\$\{\(\[\/\,]/)[0];
     g2e[temp[1]] = temp[0];
 });
@@ -151,7 +157,6 @@ function foreignToForeign(type, words){
 
             if(word in s2e){
                 tempWord = s2e[word];
-                console.log(tempWord);
                 if(tempWord in e2g){
                     console.log(e2g[tempWord]);
                     outputArray[i] = e2g[tempWord];
@@ -175,7 +180,7 @@ app.get('/translate/:type/:words', function(req,res){
 
 //sets up everything necessary to process URl and translation
 outputArray=[];
-var type = req.params.type;   
+var type = req.params.type; 
 var words = req.params.words;
 words = words.split('+');
 //makes sure what operation is requested
@@ -198,5 +203,6 @@ let buffer = ""
 for (let i = 0; i < outputArray.length; i++ ){
     buffer = buffer + outputArray[i].toString() + " ";
 }
-    res.end(buffer);
+console.log(buffer);
+res.send(buffer);
 });

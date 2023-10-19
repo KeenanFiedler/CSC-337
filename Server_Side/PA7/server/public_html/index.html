@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+    Keenan Fiedler
+    This file is the main page for PA6. It has the title, javascript linked in, and css linked in. It also hs two selection boxes with the three language options,
+    and the two text boxes fro the user's input and the translation.
+-->
+<html lang ='en'>
+    <head>
+        <title>Chatty</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="style.css">
+        <script src="functions.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="text" id="textLeft">
+                <p id="textAreaLeft" class="chat"></p>
+            <div class="text" id="textRight">
+                <p id="textAreaRight" class="chat"></p>
+            </div>
+            <div class="inputs" id="inputLeft">
+                <label for="alias1">Alias:</label>
+                <input type="text" id="alias1" class="inputItems1">
+                <br>
+                <label for="message1">Message:</label>
+                <input type="text" id="message1" class="inputItems1">
+                <br>
+                <button onclick="sendMessage(1)" id="send1" class="inputItems">Send Message</button>
+            </div>
+            <div class="inputs" id="inputRight">
+                <label for="alias2">Alias:</label>
+                <input type="text" id="alias2" class="inputItems2">
+                <br>
+                <label for="message2">Message:</label>
+                <input type="text" id="message2" class="inputItems2">
+                <br>
+                <button onclick="sendMessage(2)" id="send1" class="inputItems">Send Message</button>
+            </div>
+        </div>
+    </body>
+</html>
