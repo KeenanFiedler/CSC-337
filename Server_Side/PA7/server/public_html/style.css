@@ -1,7 +1,7 @@
 /*
     Keenan Fiedler
-    This is stylesheet for PA6. It contains all the necessary font, font-size, and color changes to make the page look good.
-    It also arranges the heading, two selection boxes, and two text boxes into a nice layout with two columns for the input and translated text.
+    This is stylesheet for PA7. It contains all the necessary font, font-size, and color changes to make the page look good.
+    It also arranges the two columns of text, the input boxes and the send message buttons.
 */
 
 body{
@@ -11,52 +11,34 @@ body{
 }
 
 .text{
-    width: 50%;
+    width:100%;
     height: 80%;
     background-color: lightgoldenrodyellow;
     border-width: 5px;
     border-style: solid;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    font-size: 30px;
 }
 .inputs{
     background-color: green;
     height: 20%;
-    width: 50%;
+    width: 100%;
     border-width: 5px;
     border-style: solid;
-}
-#textRight{
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    font-size: 30px;
-}
-#textAreaRight{
-    padding: 2%;
-}
-#textLeft{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    font-size: 30px;
-}
-#textAreaLeft{
-    padding: 2%;
-}
-#inputRight{
     position: fixed;
     right: 0px;
     bottom: 0px;
     display:inline-block;
     text-align: center;
 }
-#inputLeft{
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    display:inline-block;
-    text-align: center;
+#textArea{
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2%;
 }
-.inputItems1, .inputItems2{
+.inputItems{
     font-size: 25px;
     margin-top: 5px;
 }

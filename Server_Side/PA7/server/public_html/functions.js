@@ -1,17 +1,17 @@
 /*
     Keenan Fiedler
-    This is the client-side Javascript file for PA6. It allows the users text entered in the left side to be translated to text on the right side.
-    This is based on their choice in the two drop down boxes, with six different translation modes. 
-    It sends a request to the server for the actual translation using promises.
+    This is the client-side Javascript file for PA7. It allows the users text entered in the text boxes
+    to be send to the server to be save as messages. It also has a function called every second that sets
+    the proper area to display all previous messages.
 */
 
-//This function gets the translation of the text in the left from the server and displays it on the right
-//It has no parameters.
+//This function gets the input text in the alias and message boxes, and sends it to he server to be saved
+//It has no parameters
 function sendMessage(person){
     //include <b> tags and colon around alias in the message
-    let inputs = document.getElementsByClassName("inputItems" + String(person));
-    let send = {message: "<b>" + inputs[0].value + ":</b> " + inputs[1].value};
-    let p = fetch("http://localhost:80/message", {
+    let inputs = document.getElementsByClassName("inputItems");
+    let send = {time: new Date().getTime(), alias: "<b>" + inputs[0].value + ":</b> ", message: inputs[1].value};
+    let p = fetch("http://localhost:80/chats/post", {
         method: 'POST',
         body: JSON.stringify(send),
         headers: { 'Content-Type': 'application/json'}
@@ -20,19 +20,22 @@ function sendMessage(person){
         console.log(error);
     });
     console.log("Sent");
+    document.getElementById("message").value = "";
 }
 
 
 //This function refreshes the messages on the screen every second
 //It has no parameters
 function updateMessages(){
-    let textAreas = document.getElementsByClassName("chat");
+    let textArea = document.getElementById("textArea");
     var messages = "";
-    fetch("http://localhost:80/update").then((response) => {return response.text();}).then((text) =>{messages = text});
-    for(let i = 0; i < textAreas.length; i++){
-        textAreas[i].innerHTML = messages;
-    }
-    console.log("Updated");
+    fetch("http://localhost:80/chats").then((response) => {return response.text();}).then((text) => {messages = text;}).then(()=>
+    {
+    textArea.innerHTML = messages;
+    })
+    .catch((error) => {
+        console.log(error);
+    });
 }
 
-var get = setInterval(updateMessages(), 1000);
+setInterval(updateMessages, 1000);
