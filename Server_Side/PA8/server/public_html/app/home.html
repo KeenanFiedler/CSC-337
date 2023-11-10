@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+    Keenan Fiedler
+    This file is the home page for PA9. It has the search bar for the listings, and the buttons to add items,
+    see your listings, and see your purchases. 
+-->
+<html lang="en">
+    <head>
+        <script src="app.js"></script>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="home_style.css">
+    </head>
+
+    <body onload="getName()">
+        <h1 id = "heading">Ostaa</h1>
+        <div class = "row">
+            <div class = "col" id ='options'>
+                <h1 id = "top"></h1>
+                <label for="listingsSearch">Search the Listings:</label>
+                <input type="text" id="search" class="viewers">
+                <button onclick="searchListings()" class="viewers">Search!</button>
+                <br>
+                <button onclick="viewListings()" class="viewers">View Your Listings!</button>
+                <br>
+                <button onclick="viewPurchases()" class="viewers">View Your Purchases!</button>
+                <br>
+                <button onclick="addListing()" class="viewers">Add a Listing!</button>
+            </div>
+            <div class="col" id = itemDisplay>
+            </div>
+        </div>
+    </body>
+</html>

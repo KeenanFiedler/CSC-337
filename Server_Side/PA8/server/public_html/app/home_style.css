@@ -1,0 +1,81 @@
+/*
+    Keenan Fiedler
+    This is stylesheet for the  home page of PA9. It changes the font and adds spacing to the input fields, 
+    and sets up the style for the listings display
+*/
+/*All document stuff*/
+html {
+    height: 100%;
+}
+body{
+    font-family: Courier;
+    margin: 0px;
+    font-size: 25px;
+    background-color: lightcoral;
+    height: 100vh;
+    display: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+button{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.itemItems{
+    margin: 10px;
+    padding: 10px;
+}
+.viewers{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.row{
+    width: 100%;
+    height: 90vh;
+}
+.col{
+    height: 90vh;
+}
+div{
+    background-color: lightcyan;
+    display: inline-block;
+    justify-content: center;
+}
+#heading{
+    height: 120%;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: lightgoldenrodyellow;
+}
+#options{
+    width: 60%;
+    position: fixed;
+    top: 120px;
+    left: 0px;
+    padding: 20px;
+}
+#itemDisplay{
+    width:40%;
+    position: fixed;
+    right:0px;
+    top:120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+#itemDisplay > div {
+    border-width: 5px;
+    border-color: coral;
+    border-style: solid;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+#listingsSearch{
+    font-size: 20px;
+}

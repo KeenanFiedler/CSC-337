@@ -1,0 +1,34 @@
+/*
+    Keenan Fiedler
+    This is stylesheet for the login page for PA9. It changes the font and adds spacing to the input fields
+    and makes the page match the color scheme.
+*/
+
+
+body{
+    font-family: Courier;
+    margin: 0px;
+    font-size: 25px;
+    background-color: lightcoral;
+    height: 100vh;
+    display: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.post{
+    margin: 25px;
+}
+button{
+    font-size: 20px;
+    padding: 10px;
+}
+#heading{
+    height: 5%;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: lightgoldenrodyellow;
+}
+input{
+    font-size: 25px;
+}

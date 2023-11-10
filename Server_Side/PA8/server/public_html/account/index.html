@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+    Keenan Fiedler
+    This file is the login page for PA8. It has the add user and login forms, which get the correct
+    information from the user and send it the server through some javascript.
+-->
+<html lang ='en'>
+    <head>
+        <title>Ostaa</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="style.css">
+        <script src="login.js"></script>
+    </head>
+    <body>
+        <h1 id = "heading">Ostaa</h1>
+        <div class = 'post' id="login">
+            <h1>Sign In</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="loginItems">
+            <br>
+            <label for="password">Password:</label>
+            <input type="text" id="password" class="loginItems">
+            <br>
+            <button onclick="login()" class="loginItems">Login</button>
+        </div>
+        <div class = 'post' id="register">
+            <h1>Register New User</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="userItems">
+            <br>
+            <label for="password">Password:</label>
+            <input type="text" id="password" class="userItems">
+            <br>
+            <button onclick="addUser()" class="userItems">Register</button>
+        </div>
+    </body>
+</html>

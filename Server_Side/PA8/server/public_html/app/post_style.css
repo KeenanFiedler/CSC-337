@@ -1,0 +1,40 @@
+/*
+    Keenan Fiedler
+    This is stylesheet for the add item page for PA9. It changes the font and adds spacing to the input fields
+    and makes it fit the color scheme.
+*/
+html {
+    height: 100%;
+}
+body{
+    font-family: Courier;
+    margin: 0px;
+    font-size: 25px;
+    background-color: lightcyan;
+    height: 100vh;
+    display: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+button{
+    font-size: 25px;
+    width: 150px;
+}
+#heading{
+    height: 5%;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: darkblue;
+}
+.itemItems{
+    margin: 30px;
+    padding: 10px;
+}
+.post{
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;   
+    position: fixed;
+    display: block;
+}

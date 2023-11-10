@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+    Keenan Fiedler
+    This file is the add item page for PA9. It has form elements to get the proper input
+    from the user, and a button to add the item.
+-->
+<html lang="en">
+    <head>
+        <script src="app.js"></script>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="post_style.css">
+    </head>
+    <body>
+        <h1 id = "heading">Ostaa</h1>
+        <div class = 'post'>
+            <h1>Add Item</h1>
+            <label for="title">Title:</label>
+            <input type="text" id="title" class="itemItems">
+            <br>
+            <label for="desc">Desc:</label>
+            <input type="text" id="desc" class="itemItems">
+            <br>
+            <label for="image">Image:</label>
+            <input type="text" id="image" class="itemItems">
+            <br>
+            <label for="price">Price:</label>
+            <input type="number" id="price" class="itemItems">
+            <br>
+            <label for="status">Status:</label>
+            <input type="text" id="status" class="itemItems">
+            <br>
+            <button onclick="addItem()" class="itemItems">Add Item</button>
+        </div>
+    </body>
+</html>
